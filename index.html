@@ -1,1 +1,73 @@
-YOLO RIGHT? 
+---
+layout: nil
+title: Galaxy Kadiyala
+---
+<!DOCTYPE html>
+
+<meta name="description" content="Galaxy Kadiyala's Page">
+<meta name="author" content="Galaxy Kadiyala">
+
+<meta charset="utf8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="alternate" type="application/atom+xml" href="index.xml">
+<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/mop.css">
+
+<title>Galaxy Kadiyala</title>
+
+<aside>
+  <p align="center"><a href="http://galaxyk.github.io"><img id="avatar" src="http://gravatar.com/avatar/f524eb81c5dcb48e672a27be4910de1c.png?s=160"></a>Galaxy Kadiyala</p>
+
+    <p><center>I am a <a href="http://reps.mozilla.org/u/galaxyk/">Mozilla Reps Mentor</a>, 
+    <a href="https://galaxyk.makes.org">Webmaker</a>, and a <a href="http://instagram.com/igalaxyk">Foodie</a>.</center>
+   </p>
+   <p><center><a href="http://twitter.com/galaxyk"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;
+        <a href="http://facebook.com/galaxyk"><i class="fa fa-facebook-square"></i></a>&nbsp;&nbsp;
+        <a href="http://in.linkedin.com/in/galaxyk"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;
+        <a href="http://github.com/galaxyk"><i class="fa fa-github"></i></a>&nbsp;&nbsp;
+        <a href="https://foursquare.com/galaxyk"><i class="fa fa-foursquare"></i></a>&nbsp;&nbsp;
+        <a href="https://www.youtube.com/user/galaxykadiyala"><i class="fa fa-youtube"></i></a>&nbsp;&nbsp;
+        <a href="http://feeds.feedburner.com/galaxyk"><i class="fa fa-rss"></i></a></center>
+        </p>
+        <p><center><a href="contact.html">Contact</a></center></p>
+  <hr>
+</aside>
+
+
+<article id="home">
+
+    <ul>
+    <p><font size="5">BLOG</font></p>
+    
+        {% for post in site.posts limit:100 %}
+        {% if post.standalone == null %}
+        <li><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time><a href="{{ post.url }}">{{ post.title }}</a>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</article>
+
+<article id="home">
+    <ul>
+
+      <p><font size="5">TALKS</font></p>
+      <p><font size="3"></font></p>
+
+          <li><time datetime="">21 Feb 2014</time><a href="">Will update shortly!</a>
+
+
+
+    </ul>
+</article>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49933252-1', 'galaxyk.github.io');
+  ga('send', 'pageview');
+
+</script>
